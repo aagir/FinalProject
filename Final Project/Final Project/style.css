@@ -1,0 +1,389 @@
+/* Below Listed are all the style tags used to create the website*/
+
+
+/* for Font */
+* {
+    font-family: cursive;
+}
+/* for header(h1)*/
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: yellow;
+}
+/*for body*/
+#body {
+    width: 100%;
+}
+/* Defult section paddong*/
+.sec-padding {
+    padding: 50px 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Style tag used for the header of all pages*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 90px;
+    background-color: antiquewhite;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+/* Style tag used for the navigation bar of all pages*/
+#navbar {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: deeppink;
+    transition: 0.5s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: rgb(97, 85, 70);
+}
+
+#navbar li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: deeppink;
+    position: absolute;
+    bottom: -5px;
+    left: 20px;
+}
+/* Style tag used for the background image at the top of the inder or main page*/
+#Head {
+    background-image: url(photo/55.jpg);
+    height: 125vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+/* Style tag used header(h2)*/
+#Head h2 {
+    color: deeppink;
+    padding-bottom: 15px;
+}
+/* Style tag used for shop now botton*/
+#Head button {
+
+    background-color: antiquewhite;
+    color: black;
+    border: 3;
+    border-color: antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 10 20 rgba(0, 0, 0, 0.08);
+    padding: 12px 15px 15px 12px;
+    cursor: pointer;
+    font-size: 20px;
+}
+/* Style tag used for the newsletter section of all pages*/
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: yellow;
+    border-radius: 10px;
+
+}
+
+#newsletter h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: deeppink;
+}
+
+#newsletter p {
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(97, 85, 70);
+}
+
+#newsletter .form {
+    display: flex;
+    width: 50%;
+}
+
+#newsletter input {
+    height: 4 rem;
+    padding: 0 2em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: deeppink;
+    color: yellow;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+/* Style tag used for the ending contact information of all pages*/
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer.colmun {
+    display: flex;
+    flex-direction: column;
+    align-content: right;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+/* Style tag used for background image of gallary or shop page*/
+#pg-Head {
+    background-image: url(photo/10.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+/* Style tag used for header(h3) of all pages*/
+#pg-Head h3 {
+    color: deeppink;
+}
+/* Style tag used for header(h5) of all pages*/
+#pg-Head h5 {
+    color: deeppink;
+}
+/* Style tag used for aligning image in th shop or gllary page*/
+#products {
+    text-align: center;
+}
+
+#product .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+/* Style tag used to describe the product*/
+#products .pro1 {
+    width: 30%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid antiquewhite;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.03);
+    margin: 15px 0;
+    transition: 0.2s ease;
+}
+
+#products .pro1 img {
+    width: 80%;
+    border-radius: 15px;
+}
+
+#navigation {
+    text-align: center;
+}
+
+#navigation a {
+    text-decoration: none;
+    background-color: yellow;
+    padding: 10px 15px;
+    border-radius: 5 px;
+    color: deeppink;
+    font-weight: 500;
+}
+
+#pg-Head h4 {
+    color: deeppink;
+}
+/* Style tag used for the background image for create page*/
+#pg-Head.create-head {
+    background-image: url(photo/14.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#create {
+    padding: 150px 150px 0px 150px;
+}
+
+#create .create-box {
+    display: flex;
+    color: deeppink;
+    align-items: center;
+    width: 100%;
+}
+
+#create .create-img {
+    width: 50%;
+    margin-right: 50px;
+    box-shadow: 25px;
+}
+
+#create img {
+    border-radius: 12px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#create .create-text {
+    width: 50%;
+}
+
+#create .create-text a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: yellow;
+    transition: 0.5s ease;
+
+}
+/* Style tag used for changes in buttons of all pages*/
+#create .create-text a:hover,
+#create .create-text a:active {
+    color: rgb(97, 85, 70);
+}
+
+#create h2 {
+    color: deeppink;
+    padding-bottom: 100px;
+}
+
+#create h5 {
+    color: yellow;
+    font-size: 18px;
+    margin-top: -80px;
+    padding-bottom: 100px;
+}
+/* Style tag used for the background image of about us page*/
+#pg-Head.about-head
+{
+    background-image: url(photo/25.jpg);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+#aboutus
+{
+    display: flex;
+    align-items: center;
+}
+#aboutus img
+{
+    width: 30%;
+    height: auto;
+}
+#aboutus div
+{
+    padding-left: 40px;
+}
+#aboutus div p
+{
+    color:rgb(97, 85, 70)
+}
+/* Style tag used for the background image of contact us page*/
+#pg-Head.contact-head
+{
+    background-image: url(photo/34.jpg);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#formbox
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+    padding: 80px;
+    border: 1px solid black;
+}
+#formbox form
+{
+    width: 70%;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#formbox form input,
+#formbox form textarea
+{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+#formbox form button
+{
+    background-color: yellow;
+    color: deeppink;
+    cursor: pointer;
+}
+#formbox .photo div
+{
+    padding-right: 25px;
+
+}
+/* Style tag used to align the form and image*/
+#formbox .photo div img
+{
+    width: 100%;
+    height: 80 vh;
+    object-fit: cover;
+    margin-right: 20px;
+}
