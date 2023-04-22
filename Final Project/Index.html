@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Miris</title>
+        
+        <style>
+            *{
+                font-family:cursive;
+            }
+            h1{
+                font-size: 50px;
+                line-height: 64px;
+                color: yellow;
+            }
+            #body
+            {
+                width: 100%;
+            }
+            .sec-padding
+            {
+                padding: 50px 80px;
+            }
+            
+            *{
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+            }
+            #header
+            {
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px 90px;
+                background-color:antiquewhite;
+                box-shadow: 0 5px 15px rgba(0,0,0, 0.06 );
+                z-index: 999;
+                position: sticky;
+                top: 0;
+                left: 0;
+            }
+            #navbar
+            {
+                display: flex;
+                align-items: left;
+                justify-content: center;
+            }
+            #navbar li
+            {
+                list-style: none;
+                padding: 0 20px;
+                position: relative;
+            }
+            #navbar li a{
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 500;
+                color: deeppink;
+                transition: 0.5s ease;
+            }
+            #navbar li a:hover,
+            #navbar li a.active{
+                color:rgb(97, 85, 70);
+            }
+            #navbar li a.active::after
+            {
+                content: "";
+                width: 30%;
+                height: 2px;
+                background: deeppink;
+                position:absolute;
+                bottom: -5px;
+                left: 20px;
+            }
+            #Head
+            {
+                background-image: url(photo/55.jpg);
+                height: 125vh;
+                width: 100%;
+                background-size: cover;
+                background-position: top 25% right 0%;
+                padding: 0 80px;
+                display: flex;
+                flex-direction:column ;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            #Head h2
+            {
+                color: deeppink;
+                padding-bottom: 15px;
+            }
+            #Head button
+            {
+               
+                background-color:antiquewhite ;
+                color: black;
+                border: 3;
+                border-color: antiquewhite;
+                border-radius: 10px;
+                box-shadow: 0 10 20 rgba(0,0,0, 0.08 );
+                padding: 12px 15px 15px 12px;
+                cursor: pointer;
+                font-size: 20px;
+            }
+            #newsletter
+            {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                align-items: center;
+                background-repeat: no-repeat;
+                background-color: yellow;
+                border-radius: 10px;
+                
+            }
+            #newsletter h2
+            {
+                font-size: 22px;
+                font-weight: 600;
+                color: deeppink;
+            }
+            #newsletter p
+            {
+                font-size: 16px;
+                font-weight: 400;
+                color:rgb(97, 85, 70);
+            }
+            #newsletter .form
+            {
+                display: flex;
+                width: 50%;
+            }
+            #newsletter input
+            {
+                height: 4 rem;
+                padding: 0 2em;
+                font-size: 14px;
+                width: 100%;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                outline: none;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            #newsletter button
+            {
+                background-color: deeppink;
+                color: yellow;
+                white-space: nowrap;
+                border-top-left-radius:0 ;
+                border-bottom-left-radius: 0;
+            }
+            #footer{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+             }
+             #footer.colmun
+              {
+                display: flex;
+                flex-direction: column;
+                align-content: right;
+                align-items: flex-start;
+                margin-bottom: 20px;
+             }
+             @media (max-width=799px)
+        </style>
+            
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="photo/logo.png" class="logo" width="250ppx" alt=""></a>
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Shop</a></li>
+                    <li><a href="create.html">Create</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fa-light fa-basket-shopping"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="Head">
+            <h1>Your Moment's On Us</h1>
+            <h2>For all that is beautiful !!</h2>
+            <br>
+            <br>
+            <button> Shop Now </button>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="newsletter" class="sec-padding">
+            <div class="newstext">
+                <h2>Sign Up For Newsletter</h2>
+                <p>Get E-mails updates on our latest brands and <span>offers</span></p>
+            </div>
+            <div class="form">
+                <input type="text" placeholder="Your E-mail">
+                <button class="normal"> Sign up </button>
+
+            </div>
+        </section>
+        <footer class="sec-padding">
+            <div class="col">
+                <img src="photo/logo.png" alt="" width="150px">
+                <br>
+                <br>
+                <h4> Contact </h4>
+                <p><strong>Address:</strong>500 N CAMDEN DR, BEVERLY HILLS, CA 90210-3202, USA</p>
+                <p><strong>Phone:</strong>(01) 338-4517 / (+91) 468-0071</p>
+                <div class="follow">
+                    <h4> Follow us : </h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                </div>
+                </div>
+            </div>
+            <br>
+            <div class="copyright" align="center">
+                <p> © 2023, Miris - HTML CSS</p>
+                <a href="#">Privacy policy</a> 
+                <br>
+                <a href="">Terms and Conditions</a> 
+            </div>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
