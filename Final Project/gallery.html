@@ -184,34 +184,62 @@
         {
             color: deeppink;
         }
-        #products
-        {
-            text-align: center;
-        }
-        #product .container
-        {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            padding-top: 20px;
+       
+        .shop-section {
+        padding: 40px;
+        text-align: center;
         }
 
-        #products .pro1
-        {
-            width: 30%;
-            min-width: 250px;
-            padding: 10px 12px;
-            border: 1px solid antiquewhite;
-            border-radius: 25px;
-            cursor: pointer;
-            box-shadow: 20px 20px 30px rgba(0,0,0, 0.03 );
-            margin: 15px 0;
-            transition: 0.2s ease;
+        .section-title {
+        font-size: 36px;
+        margin-bottom: 20px;
         }
-        #products .pro1 img
-        {
-            width: 80%;
-            border-radius: 15px;
+
+        .product-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        }
+
+        .product-card {
+        background-color: #f8f8f8;
+        padding: 20px;
+        text-align: center;
+        }
+
+        .product-card img {
+        max-width: 100%;
+        }
+
+        .product-title {
+        font-size: 24px;
+        margin: 10px 0;
+        }
+
+        .product-description {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        }
+
+        .product-price {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        }
+
+        .add-to-cart {
+        background-color:deeppink;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        }
+
+        .add-to-cart:hover {
+        background-color: yellow;
         }
         #navigation
         {
@@ -229,7 +257,7 @@
     </style>
     </head>
     <body>
-        <section id="header">
+            <section id="header">
             <a href="#"><img src="photo/logo.png" class="logo" width="250ppx" alt=""></a>
             <div>
                 <ul id="navbar">
@@ -241,98 +269,88 @@
                     <li><a href="cart.html"><i class="fa-light fa-basket-shopping"></i></a></li>
                 </ul>
             </div>
-        </section>
-        <section id="pg-Head">
+            </section>
+            <section id="pg-Head">
             <h1> Every Product Delivered to you</h1>
             <h3>Find it! , Love it! , Buy it! </h3>
             <h5>It's That Easy</h5>
-            
-        </section>
-        <br>
-        <br>
-        <br>
-        <section id="products" class="sec-padding">
-            <h2 align="center"> Collections </h2>
-            <div class="container">
-                <div class="pro1">
-                    <img src="photo/49.jpg" alt="" width="250px" height="350px">
-                    <div class="description">
-                        <span>ZARA</span>
-                        <h5> Seoul, San fransisco </h5>
-                        <h4>$380</h4>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="container">
-                <br>
-                <br>
-                <br>
-                <div class="pro1">
-                    <img src="photo/49.jpg" alt="" width="250px" height="350px">
-                    <div class="description">
-                        <span>ZARA</span>
-                        <h5> Seoul, San fransisco </h5>
-                        <h4>$380</h4>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="container">
-                <br>
-                <br>
-                <br>
-                <div class="pro1">
-                    <img src="photo/49.jpg" alt="" width="250px" height="350px">
-                    <div class="description">
-                        <span>ZARA</span>
-                        <h5> Seoul, San fransisco </h5>
-                        <h4>$380</h4>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="container">
-                <br>
-                <br>
-                <br>
-                <div class="pro1">
-                    <img src="photo/49.jpg" alt="" width="250px" height="350px">
-                    <div class="description">
-                        <span>ZARA</span>
-                        <h5> Seoul, San fransisco </h5>
-                        <h4>$380</h4>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="Container">
-                <br>
-                <br>
-                <br>
-                <div class="pro1">
-                    <img src="photo/49.jpg" alt="" width="250px" height="350px">
-                    <div class="description">
-                        <span>ZARA</span>
-                        <h5> Seoul, San fransisco </h5>
-                        <h4>$380</h4>
-                    </div>
-
-                </div>
-
             </section>
+            <section class="shop-section">
+                <h2 class="section-title">Our Products</h2>
+                <div class="product-grid">
+                  <div class="product-card">
+                    <img src="photo/49.jpg" alt="">
+                    <h3 class="product-title">ZARA</h3>
+                    <p class="product-description"> Seoul or Sanfransisco</p>
+                    <p class="product-price">$298</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="photo/28.jpg" alt="">
+                    <h3 class="product-title">Floris</h3>
+                    <p class="product-description">Eau De Cologne</p>
+                    <p class="product-price">$320.98</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="photo/24.jpg" alt="">
+                    <h3 class="product-title"> YSL</h3>
+                    <p class="product-description"> Spring Collection</p>
+                    <p class="product-price">$177.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="photo/21.jpg" alt="">
+                    <h3 class="product-title">Eau De Toilette</h3>
+                    <p class="product-description"> Forest Breeze</p>
+                    <p class="product-price">$225</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="photo/43.jpg" alt="">
+                    <h3 class="product-title">Pentalogies</h3>
+                    <p class="product-description"> Orange oranges</p>
+                    <p class="product-price">$99.99</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="photo/23.jpg" alt="">
+                    <h3 class="product-title"> Jo Malone</h3>
+                    <p class="product-description">Blue Agava & Cacao</p>
+                    <p class="product-price">$500</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="photo/48.jpg" alt="">
+                    <h3 class="product-title">Do Son</h3>
+                    <p class="product-description"> Paradise </p>
+                    <p class="product-price">$368</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="photo/36.jpg" alt="">
+                    <h3 class="product-title">Miris Special</h3>
+                    <p class="product-description"> Autum's Here </p>
+                    <p class="product-price">$259.85</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  <div class="product-card">
+                    <img src="photo/41.jpg" alt="">
+                    <h3 class="product-title"> Miris Special</h3>
+                    <p class="product-description"> Dark Collection</p>
+                    <p class="product-price">$259.85</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                  </div>
+                  
+                </div>
+              </section>
+            
             <section id="navigation" class="sec-padding">
                 <a href="#">1</a>
                 <a href="#">2</a>
                 <a href="#">N</a>
             </section>
-
-
-        <section id="newsletter" class="sec-padding">
+            <section id="newsletter" class="sec-padding">
             <div class="newstext">
                 <h2>Sign Up For Newsletter</h2>
                 <p>Get E-mails updates on our latest brands and <span>offers</span></p>
@@ -342,8 +360,8 @@
                 <button class="normal"> Sign up </button>
 
             </div>
-        </section>
-        <footer class="sec-padding">
+            </section>
+            <footer class="sec-padding">
             <div class="col">
                 <img src="photo/logo.png" alt="" width="150px">
                 <br>
@@ -368,8 +386,6 @@
                 <br>
                 <a href="">Terms and Conditions</a> 
             </div>
-        </footer>
-        
-        <script src="script.js"></script>
+            </footer>
     </body>
 </html>
